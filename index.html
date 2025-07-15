@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Banking Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="container nav-content">
+      <div class="logo">
+        <img src="https://img.icons8.com/fluency/48/bank.png" alt="Bank Logo" class="logo-img">
+        MyBank
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="login-btn" id="loginBtn">Login</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <h1>Welcome to GlobalBank</h1>
+      <p>Your trusted partner for secure and easy banking.</p>
+      <button class="cta-btn" id="scrollToAccounts">View Accounts</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="accounts-section" id="accountsSection">
+        <div class="container">
+            <h2>Accounts Overview</h2>
+            <table class="accounts-table" id="accountsTable">
+                <thead>
+                    <tr>
+                    <th>Icon</th>
+                    <th>Account Type</th>
+                    <th>Account Number</th>
+                    <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be injected by JS -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="transactions-section">
+      <div class="container">
+        <h2>Recent Transactions</h2>
+        <table class="transactions-table" id="transactionsTable">
+          <thead>
+            <tr>
+              <th>Transaction Date</th>
+              <th>Transaction Description</th>
+              <th>Debited Amount</th>
+              <th>Credited Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Transaction rows will be injected by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 MyBank. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
